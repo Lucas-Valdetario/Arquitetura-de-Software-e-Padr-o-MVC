@@ -1,5 +1,6 @@
 from src.models.sqlite.interfaces import people_repository
 from src.models.sqlite.interfaces.people_repository import PeopleRepositoryInterface
+import re 
 
 class PersonCreatorController:
     def __init__(self, people_repository: PeopleRepositoryInterface) -> None:
@@ -33,4 +34,4 @@ class PersonCreatorController:
                 "count": 1,
                 "attributes": person_info
             }
-        }
+        }       
